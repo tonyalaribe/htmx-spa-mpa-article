@@ -4,7 +4,7 @@
 
 I often encounter discussions on Reddit and YCombinator where newer developers seek tech stack advice. Inevitably, someone claims it's impossible to build a high-quality application without using a single-page application (SPA) framework like React or AngularJS. This strikes me as odd because, even before the SPA revolution, many popular multi-page web applications offered excellent user experiences.
 
-Two years ago, I set out to build an observability platform and chose to experiment with a multi-page application (MPA) approach using HTMX. I wondered: Would a server-rendered MPA be inadequate for a data-heavy application, considering that most observability platforms are built on ReactJS?
+Two years ago, I set out to build an [observability platform](https://apitoolkit.io) and chose to experiment with a multi-page application (MPA) approach using HTMX. I wondered: Would a server-rendered MPA be inadequate for a data-heavy application, considering that most observability platforms are built on ReactJS?
 
 What I discovered is that you can create outstanding server-rendered applications if you pay attention to certain details. **Here are some common MPA myths and what I've learned about them:**
 
@@ -160,7 +160,7 @@ I've heard this a lot when HTMX is discussed. So, there might be some confusion 
 
 In situations where robust interactivity is helpful, you can lean into the component islands architecture using WebComponents or any javascript framework (react, angular, etc) of your choice. That way, instead of your entire application being an SPA, you can leverage those frameworks specifically for the bits of your application that need that interactivity.
 
-The example above shows a very interactive search component in the API[toolkit](https://apitoolkit.io). It's a web component implemented with lit-element, a zero-compile-step library for writing web components. So, the entire web component event fits in a Javascript file.
+The example above shows a very interactive search component in the [APItoolkit](https://apitoolkit.io). It's a web component implemented with lit-element, a zero-compile-step library for writing web components. So, the entire web component event fits in a Javascript file.
 
 [Using an interactive webcomponents island as a search element.](You%20Can't%20Build%20Interactive%20Web%20Apps%20Except%20as%20Sin%207731394414754a74bf3a967f7e4f467b/webcomponents-filter-element2.mp4)
 
